@@ -4,9 +4,10 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<title>Animal Buttons</title>
+	<title>Gif Tastic</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Fascinate+Inline" rel="stylesheet">
 </head>
 
 <body>
@@ -15,23 +16,31 @@
 		<div class="container-fluid">
 			<div class="navbar-header"></div>
 			<h1 class="animated tada">GifTastic</h1>
-
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-8 buttons"></div>
-
-					<form class="col-xs-4 navbar-form navbar-right">
-						<div class="form-group">
-							<input id="searchTerm" type="text" class="form-control" placeholder="Search" value="">
-						</div>
-						<button type="submit" class="btn btn-success" id="searchBtnn">Search</button>
-					</form>
-
-					<div class="col-xs-12 images"></div>
+			<p class="description text-center">Select a tab to view Gifs...or Search for your own Gifs!</p>
+		</div>
+		</div>
+		<section>
+			<div class="row">
+				<div class="col-xs-4">
+					<input id="searchTerm" type="text" class="form-control" placeholder="Search" value="">
+				</div>
+				<div class="col-xs-4">
+					<button type="submit" class="btn btn-success" id="searchBtnn">Search</button>
 				</div>
 			</div>
-		</div>
+		</section>
 	</nav>
+	<div class="container">
+			<div class="row">
+				<div class="buttons"></div>
+			</div>
+			<hr>
+		
+	<div class="showGifs">
+		<div class="col-sm-12 col-md-12 col-lg-12 images"></div>
+
+	</div>
+</div>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="javascript/gif.js"></script>

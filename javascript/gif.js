@@ -1,4 +1,4 @@
-var gifs = ["CAT", "DOG", "MONKEY", "MOUSE","BEAR"]
+var gifs = ["Animals", "Cars", "Work", "School","Friends"]
 
 function showGifs() {
 
@@ -35,6 +35,7 @@ $("#searchBtnn").on("click", function (event) {
   var gifName = $("#searchTerm").val().trim();
   console.log(gifName);
   gifs.push(gifName);
+  $('#searchTerm').val('');
   addButtons()
 });
 
